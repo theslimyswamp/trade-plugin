@@ -60,5 +60,5 @@ bukkitPluginYaml {
 
     load = BukkitPluginYaml.PluginLoadOrder.STARTUP
 
-    commands.register("trade") { description = "Send a trade request to a player"; usage = "Invalid usage! /trade <player>" }
+    commands.register("trade") { description = "Send a trade request to a player."; usage = "Invalid usage! /trade <player>" }
 }
