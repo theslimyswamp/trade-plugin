@@ -7,12 +7,16 @@ import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import org.rolypolyvole.trading.Trading;
 import org.rolypolyvole.trading.trade.Trade;
 
-public class TradeCommand implements CommandExecutor {
+import java.util.ArrayList;
+import java.util.List;
+
+public class TradeCommand implements CommandExecutor, TabCompleter {
     private final Trading main;
     public TradeCommand(Trading main) {
         this.main = main;
@@ -71,5 +75,22 @@ public class TradeCommand implements CommandExecutor {
         }
 
         return false;
+    }
+
+    @Override
+    public List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String alias, String[] args) {
+        if (args.length == 1) {
+            List<String> playerNames = new ArrayList<>();
+
+            for (Player player : sender.getServer().getOnlinePlayers()) {
+                if (player.getName().toLowerCase().startsWith(args[0].toLowerCase()) && !player.equals(sender)) {
+                    playerNames.add(player.getName());
+                }
+            }
+
+            return playerNames;
+        }
+
+        return null;
     }
 }

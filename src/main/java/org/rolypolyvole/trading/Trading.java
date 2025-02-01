@@ -5,7 +5,6 @@ import org.bukkit.command.PluginCommand;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.rolypolyvole.trading.tabcomplete.TradeCommandTabCompleter;
 import org.rolypolyvole.trading.commands.TradeCommand;
 import org.rolypolyvole.trading.events.TradeMenuClose;
 import org.rolypolyvole.trading.events.TradeMenuConfirmOrCancel;
@@ -21,10 +20,11 @@ public final class Trading extends JavaPlugin {
     @Override
     public void onEnable() {
         PluginCommand tradeCommand = getCommand("trade");
+        TradeCommand command = new TradeCommand(this);
 
         assert tradeCommand != null;
-        tradeCommand.setExecutor(new TradeCommand(this));
-        tradeCommand.setTabCompleter(new TradeCommandTabCompleter());
+        tradeCommand.setExecutor(command);
+        tradeCommand.setTabCompleter(command);
 
         Bukkit.getPluginManager().registerEvents(new TradeMenuInteract(this), this);
         Bukkit.getPluginManager().registerEvents(new TradeMenuClose(this), this);
