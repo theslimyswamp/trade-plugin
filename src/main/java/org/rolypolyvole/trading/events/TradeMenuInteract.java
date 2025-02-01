@@ -9,7 +9,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.rolypolyvole.trading.Trading;
-import org.rolypolyvole.trading.events.baseEvent.TradeMenuEvent;
+import org.rolypolyvole.trading.events.base.TradeMenuEvent;
 import org.rolypolyvole.trading.trade.Trade;
 
 import java.util.HashMap;

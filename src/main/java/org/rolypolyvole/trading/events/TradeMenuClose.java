@@ -5,7 +5,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.Inventory;
 import org.rolypolyvole.trading.Trading;
-import org.rolypolyvole.trading.events.baseEvent.TradeMenuEvent;
+import org.rolypolyvole.trading.events.base.TradeMenuEvent;
 import org.rolypolyvole.trading.trade.Trade;
 
 public class TradeMenuClose extends TradeMenuEvent {
