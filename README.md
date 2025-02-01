@@ -1,5 +1,7 @@
 # Trade Plugin
 
+[![Project Status: Abandoned](./assets/images/badges/status.svg)](./)
+
 A PaperMC trading plugin for safe and scam-proof trading interactions, using custom GUIs. Written in Java.
 
 ## License
