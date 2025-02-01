@@ -1,4 +1,4 @@
-package org.rolypolyvole.trading.events;
+package org.rolypolyvole.trading.events.listeners;
 
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -9,13 +9,13 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.rolypolyvole.trading.Trading;
-import org.rolypolyvole.trading.events.base.TradeMenuEvent;
+import org.rolypolyvole.trading.events.listeners.base.TradeMenuListener;
 import org.rolypolyvole.trading.trade.Trade;
 
 import java.util.HashMap;
 
-public class TradeMenuInteractEvent extends TradeMenuEvent {
-    public TradeMenuInteractEvent(Trading main) {
+public class TradeMenuInteractListener extends TradeMenuListener {
+    public TradeMenuInteractListener(Trading main) {
         super(main);
     }
 

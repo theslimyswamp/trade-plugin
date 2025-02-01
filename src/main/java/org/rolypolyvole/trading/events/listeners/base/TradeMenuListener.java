@@ -1,12 +1,12 @@
-package org.rolypolyvole.trading.events.base;
+package org.rolypolyvole.trading.events.listeners.base;
 
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.Inventory;
 import org.rolypolyvole.trading.Trading;
 
-public abstract class TradeMenuEvent implements Listener {
+public abstract class TradeMenuListener implements Listener {
     protected final Trading main;
-    public TradeMenuEvent(Trading main) {
+    public TradeMenuListener(Trading main) {
         this.main = main;
     }
 

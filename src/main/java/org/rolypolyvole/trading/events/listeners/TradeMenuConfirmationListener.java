@@ -1,4 +1,4 @@
-package org.rolypolyvole.trading.events;
+package org.rolypolyvole.trading.events.listeners;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -8,11 +8,11 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.rolypolyvole.trading.Trading;
-import org.rolypolyvole.trading.events.base.TradeMenuEvent;
+import org.rolypolyvole.trading.events.listeners.base.TradeMenuListener;
 import org.rolypolyvole.trading.trade.Trade;
 
-public class TradeMenuConfirmationChangeEvent extends TradeMenuEvent {
-    public TradeMenuConfirmationChangeEvent(Trading main) {
+public class TradeMenuConfirmationListener extends TradeMenuListener {
+    public TradeMenuConfirmationListener(Trading main) {
         super(main);
     }
 

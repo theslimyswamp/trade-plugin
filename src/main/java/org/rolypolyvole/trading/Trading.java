@@ -6,9 +6,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.rolypolyvole.trading.commands.TradeCommand;
-import org.rolypolyvole.trading.events.TradeMenuCloseEvent;
-import org.rolypolyvole.trading.events.TradeMenuConfirmationChangeEvent;
-import org.rolypolyvole.trading.events.TradeMenuInteractEvent;
+import org.rolypolyvole.trading.events.listeners.TradeMenuCloseListener;
+import org.rolypolyvole.trading.events.listeners.TradeMenuConfirmationListener;
+import org.rolypolyvole.trading.events.listeners.TradeMenuInteractListener;
 import org.rolypolyvole.trading.trade.Trade;
 
 import java.util.HashMap;
@@ -26,8 +26,8 @@ public final class Trading extends JavaPlugin {
         tradeCommand.setExecutor(command);
         tradeCommand.setTabCompleter(command);
 
-        Bukkit.getPluginManager().registerEvents(new TradeMenuInteractEvent(this), this);
-        Bukkit.getPluginManager().registerEvents(new TradeMenuCloseEvent(this), this);
-        Bukkit.getPluginManager().registerEvents(new TradeMenuConfirmationChangeEvent(this), this);
+        Bukkit.getPluginManager().registerEvents(new TradeMenuInteractListener(this), this);
+        Bukkit.getPluginManager().registerEvents(new TradeMenuCloseListener(this), this);
+        Bukkit.getPluginManager().registerEvents(new TradeMenuConfirmationListener(this), this);
     }
 }
