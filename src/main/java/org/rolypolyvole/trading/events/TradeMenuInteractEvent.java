@@ -14,8 +14,8 @@ import org.rolypolyvole.trading.trade.Trade;
 
 import java.util.HashMap;
 
-public class TradeMenuInteract extends TradeMenuEvent {
-    public TradeMenuInteract(Trading main) {
+public class TradeMenuInteractEvent extends TradeMenuEvent {
+    public TradeMenuInteractEvent(Trading main) {
         super(main);
     }
 

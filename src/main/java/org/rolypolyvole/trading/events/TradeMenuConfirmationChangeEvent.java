@@ -11,8 +11,8 @@ import org.rolypolyvole.trading.Trading;
 import org.rolypolyvole.trading.events.base.TradeMenuEvent;
 import org.rolypolyvole.trading.trade.Trade;
 
-public class TradeMenuConfirmOrCancel extends TradeMenuEvent {
-    public TradeMenuConfirmOrCancel(Trading main) {
+public class TradeMenuConfirmationChangeEvent extends TradeMenuEvent {
+    public TradeMenuConfirmationChangeEvent(Trading main) {
         super(main);
     }
 

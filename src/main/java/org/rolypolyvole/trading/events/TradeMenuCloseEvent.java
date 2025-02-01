@@ -8,8 +8,8 @@ import org.rolypolyvole.trading.Trading;
 import org.rolypolyvole.trading.events.base.TradeMenuEvent;
 import org.rolypolyvole.trading.trade.Trade;
 
-public class TradeMenuClose extends TradeMenuEvent {
-    public TradeMenuClose(Trading main) {
+public class TradeMenuCloseEvent extends TradeMenuEvent {
+    public TradeMenuCloseEvent(Trading main) {
         super(main);
     }
 
