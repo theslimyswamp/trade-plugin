@@ -292,7 +292,7 @@ public class Trade {
 
     @Contract("_ -> param1")
     private @NotNull ItemMeta addEnchantGlint(@NotNull ItemMeta meta) {
-        meta.addEnchant(Enchantment.DURABILITY, 1, true);
+        meta.addEnchant(Enchantment.UNBREAKING, 1, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         return meta;
     }
