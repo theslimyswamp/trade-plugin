@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "org.rolypolyvole"
-version = "1.1-SNAPSHOT"
+version = "0.1"
 
 val projectGroupString = group.toString()
 val projectVersionString = version.toString()
