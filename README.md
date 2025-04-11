@@ -1,4 +1,4 @@
-# Trade Plugin
+# Trading
 
 [![Project status: abandoned](./assets/images/badges/status.svg)](/)
 
