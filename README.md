@@ -14,7 +14,7 @@ A PaperMC trading plugin for safe and scam-proof trading interactions, using cus
 
 &copy; 2024-2025 [Esoteric Foundation](https://esoteric.foundation)
 
-[Trade Plugin](/) is licensed under the [AGPL 3.0](./LICENSE) only.
+[Trading](/) is licensed under the [AGPL 3.0](./LICENSE) only.
 
 ## Topics
 
