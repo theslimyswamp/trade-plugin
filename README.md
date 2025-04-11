@@ -4,6 +4,9 @@
 
 A PaperMC trading plugin for safe and scam-proof trading interactions, using custom GUIs. Written in Java.
 
+> [!NOTE]
+> By running a Minecraft server, including within this repository, you agree to the Minecraft [EULA](https://www.minecraft.net/en-us/eula).
+
 > [!WARNING]
 > At its current state, the plugin is broken and has one or more duplication glitches, so it probably shouldn't be used.
 
